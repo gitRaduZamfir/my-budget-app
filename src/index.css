@@ -295,7 +295,8 @@ p {
 .layout {
   display: -ms-grid;
   display: grid;
-  min-height: 100vh;
+  height: 100svh;
+  width: 100svw;
   -ms-grid-rows: auto 1fr auto;
   grid-template-rows: auto 1fr auto;
   background: linear-gradient(
@@ -315,7 +316,8 @@ p {
   animation: gradient 15s ease infinite;
   display: -ms-grid;
   display: grid;
-  min-height: 100vh;
+  width: 100svw;
+  height: 100svh;
   -ms-grid-rows: auto 1fr auto;
   grid-template-rows: auto 1fr auto;
 }
