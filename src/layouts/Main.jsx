@@ -17,7 +17,7 @@ function Main() {
       <main>
         <Outlet />
       </main>
-      {/* <img src={wave} alt="wave" /> */}
+      <img src={wave} alt="wave" />
     </div>
   );
 }
