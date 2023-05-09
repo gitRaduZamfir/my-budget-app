@@ -54,7 +54,7 @@ function AddExpenceForm({ budgets }) {
       </div>
       <fetcher.Form method="post" ref={formRef} className="grid-sm">
         {!showArrow && (
-          <div>
+          <div className="flex-md">
             <div className="expense-inputs">
               <div className="grid-xs">
                 <label htmlFor="newExpense">Nume produs</label>

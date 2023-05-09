@@ -338,6 +338,11 @@ p {
   width: 100%;
 }
 
+.fragment {
+  width: 100svw;
+  height: 100svh;
+}
+
 main {
   max-width: 1500px;
   width: 100%;
