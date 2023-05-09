@@ -346,6 +346,7 @@ p {
 main {
   max-width: 1500px;
   width: 100%;
+  height: 80svh;
   padding: var(--space-md) var(--space-md) var(--space-xl);
   margin-inline: auto;
   display: -ms-grid;
