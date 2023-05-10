@@ -5,10 +5,13 @@ import {
 } from '@heroicons/react/24/solid';
 import { useEffect, useRef, useState } from 'react';
 import { useFetcher } from 'react-router-dom';
+import { fetchData } from '../helpers';
 
 function AddBudgetForm() {
   const fetcher = useFetcher();
   const isSubmiting = fetcher.state === 'submitting';
+
+  const existingBudgets = fetchData('budgets');
 
   const formRef = useRef();
   const focusRef = useRef();
@@ -21,6 +24,12 @@ function AddBudgetForm() {
       focusRef.current.focus();
     }
   }, [isSubmiting]);
+
+  useEffect(() => {
+    if (existingBudgets) {
+      setShowArrow(!showArrow);
+    }
+  }, []);
 
   const arrowHandler = () => {
     setShowArrow(!showArrow);
