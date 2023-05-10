@@ -17,6 +17,7 @@ function Main() {
       <main className="main-bg">
         <Outlet />
       </main>
+      <img src={wave} alt="footer-figure" />
     </div>
   );
 }
