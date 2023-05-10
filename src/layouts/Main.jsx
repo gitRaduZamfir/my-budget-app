@@ -14,10 +14,9 @@ function Main() {
   return (
     <div className={`${!userName ? 'layout-home' : 'layout'} `}>
       <Nav className="nav-menu" userName={userName} />
-      <main>
+      <main className="main-bg">
         <Outlet />
       </main>
-      <img src={wave} alt="wave" />
     </div>
   );
 }

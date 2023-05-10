@@ -41,7 +41,7 @@ function AddBudgetForm() {
       </div>
       <fetcher.Form method="post" className="grid-sm" ref={formRef}>
         {!showArrow && (
-          <div className="flex-md">
+          <div className="grid-lg fragment">
             <div className="grid-xs">
               <label htmlFor="newBudget">Numele bugetului</label>
               <input
