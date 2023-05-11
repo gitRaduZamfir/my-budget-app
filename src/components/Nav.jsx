@@ -7,7 +7,7 @@ function Nav({ userName }) {
     <nav>
       <NavLink to="/" aria-label="Go to Home">
         <img src={logomark} alt="logomark-img" height={30} />
-        <span>HomeBudget</span>
+        <span>My Budget App</span>
       </NavLink>
       {userName && (
         <Form

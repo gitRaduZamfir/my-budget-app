@@ -17,7 +17,7 @@ function Intro() {
             type="text"
             name="userName"
             required
-            placeholder="Enter your name"
+            placeholder="Introdu Numele"
             aria-label="Your name"
             autoComplete="given-name"
           />
